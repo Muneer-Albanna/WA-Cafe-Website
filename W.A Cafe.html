@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>W.A Cafe</title>
+      <style>
+        body {
+            background: url('C:/Users/S2/OneDrive - King Suad University/Desktop/tools/examples for practice/WhatsApp Image 2024-12-31 at 6.25.54 AM.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        table, .content, .contact {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40vh; /* Adjust the margin to move the table lower */
+            display: none; /* Hide the table, content, and contact initially */
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        tr:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td:first-child {
+            background-color: #404840;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.295);
+            padding: 10px;
+            font-size: 4em; /* Increase the font size */
+        }
+        h2 {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            margin-top: -20px; /* Move the Menu icon up */
+        }
+        .title {
+            color: #8B4513; /* Dark brown color */
+        }
+        .title span {
+            color: #FFD700; /* Gold color */
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.7);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .content, .contact {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+        .content {
+            font-family: 'Lucida Handwriting', cursive; /* Change the font to a less cursive font */
+            font-size: 2em; /* Increase the font size */
+        }
+        .contact p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px 0; /* Reduce the margin */
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px; /* Reduce the padding */
+            width: fit-content;
+            margin: 5px auto; /* Reduce the margin */
+        }
+        .contact img {
+            margin-left: 5px; /* Reduce the margin */
+        }
+      </style>
+      <script>
+        function showMenu() {
+            document.getElementById('foodMenu').style.display = 'table';
+            document.getElementById('adventureContent').style.display = 'none';
+            document.getElementById('contactContent').style.display = 'none';
+        }
+        function showAdventure() {
+            document.getElementById('foodMenu').style.display = 'none';
+            document.getElementById('adventureContent').style.display = 'block';
+            document.getElementById('contactContent').style.display = 'none';
+        }
+        function showContact() {
+            document.getElementById('foodMenu').style.display = 'none';
+            document.getElementById('adventureContent').style.display = 'none';
+            document.getElementById('contactContent').style.display = 'block';
+        }
+      </script>
+    </head>
+    <body>
+        <h1 class="title">W.A <span>Cafe</span></h1>
+        <div class="dropdown">
+            <h2>Menu</h2>
+            <div class="dropdown-content">
+                <a href="#" onclick="showMenu()">Food Menu</a>
+                <a href="#" onclick="showAdventure()">Our Adventure</a>
+                <a href="#" onclick="showContact()">Contact Us</a>
+            </div>
+        </div>
+        <table id="foodMenu" border="1" dir="ltr">
+            <tr>
+                <td>Categories</td>
+                <td colspan="3" style="text-align: center;">Type</td>
+            </tr>
+            <tr>
+                <td>Hot Drinks</td>
+                <td>Hot Chocolate</td>
+                <td>Coffee Latte</td>
+                <td>Mocha</td>
+            </tr>
+            <tr>
+                <td>Cold Drinks</td>
+                <td>Ice Tea</td>
+                <td>Ice Coffee</td>
+                <td>Frappuccino</td>
+            </tr>
+            <tr>
+                <td>Cakes</td>
+                <td>Cheesecake</td>
+                <td>San Sebastian</td>
+                <td>Tiramisu</td>
+            </tr>
+            <tr>
+                <td>Cookies</td>
+                <td>Double Chocolate Cookies</td>
+                <td>Coffee & Hazelnut Cookies</td>
+                <td>Oatmeal & Honey Cookies</td>
+            </tr>
+        </table>
+        <div id="adventureContent" class="content">
+            <p>At W.A Café, our journey began with a small family dream that blossomed into a reality fueled by our passion for flavor and quality. Inspired by our love for family gatherings and crafting unique recipes, we decided to transform this passion into a project that blends distinctive flavors with warm, welcoming vibes.</p>
+            <p>What started as a simple idea grew into offering exceptional products, such as our unforgettable cheesecakes and refreshing beverages like slushes and mojitos. Over time, we’ve worked tirelessly to provide our customers with an extraordinary experience, focusing on every detail to ensure quality and a unique taste.</p>
+            <p>Our journey is not just a business story; it’s one of inspiration and challenges, driven by our love for coffee, desserts, and the desire to be part of your joyful moments. We are committed to constant growth and delivering the best while staying true to our values of honesty, cleanliness, and quality.</p>
+            <p>Thank you for being part of our journey. We look forward to welcoming you to W.A Café, where flavor meets warmth.</p>
+        </div>
+        <div id="contactContent" class="contact">
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20" height="20">
+                Owner: +967777242888
+            </p>
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20" height="20">
+                Manager: +967777242889
+            </p>
+        </div>
+    </body>
+</html>
